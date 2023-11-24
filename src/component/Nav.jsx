@@ -1,6 +1,6 @@
 import React from "react";
 import Logo from "./images/logo.svg";
-import Hamburger from "./hamburger";
+import Hamburger from "./Hamburger";
 const Nav = () => {
   return (
     <header>
