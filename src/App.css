@@ -44,6 +44,8 @@ nav li {
   background: transparent;
   border: none;
   margin-right: 2rem;
+  color: hsl(257, 7%, 63%);
+  font-weight: 700;
 }
 
 .signUp {
@@ -57,7 +59,7 @@ nav li {
 
 
 .first {
-  background: black;
+  background: hsl(257, 7%, 63%);
   display: block;
   height: 2px;
   width: 2rem;
@@ -65,7 +67,7 @@ nav li {
 }
 
 .second {
-  background: black;
+  background: hsl(257, 7%, 63%);
   display: block;
   height: 2px;
   width: 2rem;
@@ -74,7 +76,7 @@ nav li {
 }
 
 .third {
-  background: black;
+  background: hsl(257, 7%, 63%);
   display: block;
   height: 2px;
   width: 2rem;
@@ -97,4 +99,25 @@ nav li {
 .menu {
   position: absolute;
   top: 2rem;
+}
+
+.displayer {
+  display: none;
+}
+
+.disappear{
+  display:block;
+}
+
+.headerContainer {
+  width: 100%;
+  display: grid;
+  grid-template-columns: 1fr auto;
+  gap: 2rem;
+  box-sizing: border-box;
+}
+
+.bodyHeaderImage img{
+  width: 5 0%;
+
 }

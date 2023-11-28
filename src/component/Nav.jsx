@@ -1,7 +1,13 @@
-import React from "react";
+import React, { useEffect, useState } from "react";
 import Logo from "./images/logo.svg";
 import Hamburger from "./Hamburger";
 const Nav = () => {
+
+  const [display, setDisplay] = useState(false)
+  const setter = () => {
+    setDisplay(!display)
+  }
+
   return (
     <header>
       <div className="all">
@@ -17,10 +23,11 @@ const Nav = () => {
         </div>
         <div className="create">
           <button className="login">Login</button>
-          <button className="signUp">Sign Up</button>
-          <Hamburger />
+          <button onClick={setter} className="signUp">Sign Up</button>
+          {display && (<div className={display}>
+            <Hamburger />
+          </div>)}
         </div>
-        
       </div>
     </header>
   );
