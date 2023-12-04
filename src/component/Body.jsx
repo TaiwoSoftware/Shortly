@@ -4,7 +4,9 @@ import BodyHeader from './BodyHeader';
 const Body = () => {
     return (
         <body>
+            <div className='body'>
             <BodyHeader />
+            </div>
         </body>
     );
 }
